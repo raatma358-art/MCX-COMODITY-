@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCX CRUDEOIL COMMODITY</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:#ffb300;
+filter:blur(180px);
+top:-150px;
+right:-150px;
+opacity:.25;
+z-index:-1;
+}
+
+body::after{
+content:'';
+position:fixed;
+width:400px;
+height:400px;
+background:#00ff95;
+filter:blur(180px);
+bottom:-150px;
+left:-150px;
+opacity:.15;
+z-index:-1;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:30px;
+text-align:center;
+}
+
+.container{
+max-width:1200px;
+width:100%;
+}
+
+.logo{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #ffb300;
+box-shadow:0 0 40px rgba(255,179,0,.6);
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-15px)}
+}
+
+h1{
+font-size:55px;
+margin-top:25px;
+font-weight:800;
+background:linear-gradient(45deg,#ffb300,#fff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.subtitle{
+margin-top:15px;
+font-size:18px;
+color:#ccc;
+max-width:800px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.telegram-btn{
+display:inline-block;
+margin-top:35px;
+padding:18px 40px;
+background:linear-gradient(45deg,#ffb300,#ff8f00);
+color:black;
+font-weight:700;
+font-size:18px;
+border-radius:60px;
+text-decoration:none;
+transition:.4s;
+box-shadow:0 0 30px rgba(255,179,0,.4);
+}
+
+.telegram-btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 50px rgba(255,179,0,.8);
+}
+
+.market-bar{
+margin-top:60px;
+overflow:hidden;
+white-space:nowrap;
+background:#111;
+padding:15px;
+border-radius:15px;
+border:1px solid #222;
+}
+
+.market-track{
+display:inline-block;
+animation:scroll 20s linear infinite;
+}
+
+.market-track span{
+margin-right:70px;
+font-weight:600;
+color:#ffb300;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+}
+
+.section{
+padding:80px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:rgba(255,255,255,.04);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:25px;
+border:1px solid rgba(255,255,255,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#ffb300;
+box-shadow:0 0 25px rgba(255,179,0,.3);
+}
+
+.card h3{
+margin-bottom:12px;
+color:#ffb300;
+}
+
+.about{
+max-width:1000px;
+margin:auto;
+text-align:center;
+font-size:18px;
+line-height:1.9;
+color:#ccc;
+}
+
+.disclaimer{
+background:#0f0f0f;
+padding:30px;
+margin-top:70px;
+border-top:1px solid #222;
+text-align:center;
+font-size:14px;
+color:#999;
+}
+
+.floating{
+position:fixed;
+width:12px;
+height:12px;
+background:#ffb300;
+border-radius:50%;
+animation:move 15s linear infinite;
+opacity:.5;
+}
+
+@keyframes move{
+0%{
+transform:translateY(100vh) translateX(0);
+}
+100%{
+transform:translateY(-100px) translateX(200px);
+}
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:38px;
+}
+
+.section-title{
+font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="floating" style="left:10%;animation-delay:0s"></div>
+<div class="floating" style="left:25%;animation-delay:2s"></div>
+<div class="floating" style="left:40%;animation-delay:4s"></div>
+<div class="floating" style="left:60%;animation-delay:6s"></div>
+<div class="floating" style="left:80%;animation-delay:8s"></div>
+
+<section class="hero">
+
+<div class="container">
+
+<!-- Logo -->
+<img src="logo.jpg" class="logo">
+
+<h1>MCX CRUDEOIL COMMODITY</h1>
+
+<p class="subtitle">
+Premium Commodity & Stock Market Analysis Platform.
+Get High Quality MCX Crude Oil Updates, Market Insights,
+Trading Opportunities & Daily Market Research.
+</p>
+
+<a href="https://t.me/+yYQ-uBgcY59iYTdl" class="telegram-btn" target="_blank">
+🚀 JOIN TELEGRAM CHANNEL
+</a>
+
+<div class="market-bar">
+<div class="market-track">
+<span>📈 MCX CRUDE OIL</span>
+<span>📊 STOCK MARKET</span>
+<span>💰 GOLD TRADING</span>
+<span>⚡ SILVER UPDATES</span>
+<span>📉 TECHNICAL ANALYSIS</span>
+<span>🔥 INTRADAY SIGNALS</span>
+<span>📈 MCX CRUDE OIL</span>
+<span>📊 STOCK MARKET</span>
+<span>💰 GOLD TRADING</span>
+<span>⚡ SILVER UPDATES</span>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Why Join Us?
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>MCX Crude Oil Calls</h3>
+<p>Professional crude oil market tracking with real-time updates and opportunities.</p>
+</div>
+
+<div class="card">
+<h3>Commodity Analysis</h3>
+<p>Advanced commodity market research and technical analysis.</p>
+</div>
+
+<div class="card">
+<h3>Stock Market Insights</h3>
+<p>Important market trends, support & resistance zones and setups.</p>
+</div>
+
+<div class="card">
+<h3>Intraday Opportunities</h3>
+<p>Daily market movements and potential trading opportunities.</p>
+</div>
+
+<div class="card">
+<h3>Risk Management</h3>
+<p>Learn disciplined trading and proper capital management.</p>
+</div>
+
+<div class="card">
+<h3>Market Updates</h3>
+<p>Regular updates on MCX, Gold, Silver and global market events.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+About MCX Commodity Calls
+</h2>
+
+<div class="about">
+MCX Commodity Calls provides market analysis, commodity updates,
+crude oil insights and stock market information. Our mission is
+to help traders stay updated with market movements and make
+better informed decisions through quality analysis and research.
+</div>
+
+</section>
+
+<section class="section" style="text-align:center">
+
+<h2 class="section-title">
+Start Your Trading Journey
+</h2>
+
+<a href="https://t.me/+yYQ-uBgcY59iYTdl" class="telegram-btn" target="_blank">
+JOIN NOW
+</a>
+
+</section>
+
+<div class="disclaimer">
+Disclaimer: Commodity and stock market trading involves risk.
+Past performance does not guarantee future results. Trade responsibly.
+</div>
+
+</body>
+</html>
